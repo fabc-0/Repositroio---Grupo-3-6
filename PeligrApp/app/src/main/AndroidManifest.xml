@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PeligrApp">
         <activity
+            android:name=".PopReportActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PeligrApp.PopReportActivity"/>
+        <activity
             android:name=".ui.login.LoginActivity"
             android:exported="false"
             android:label="@string/title_activity_login" />

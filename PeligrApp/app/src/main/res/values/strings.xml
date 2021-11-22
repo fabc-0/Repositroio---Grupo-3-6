@@ -19,4 +19,16 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="settigns_1">Sonido de notificación</string>
+    <string name="settings_2">Radio de Notificación</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="LogOut_Button">Cerrar Sesión</string>
+    <string name="detailsButton">Detalles</string>
+    <string name="RecentReportName">Reporte más reciente</string>
+    <string name="peligrapp_logo">PeligrApp Logo</string>
+    <string name="dd_mm_aaaa">dd/mm/aaaa</string>
+    <string name="risk_description">Descripción del riesgo, Qué tan grave es?, Qué vehículos deben tener más cuidado?</string>
+    <string name="risk_placeholder">Risk_placeholder</string>
+    <string name="confirm_risk">confirmar riesgo</string>
+    <string name="unconfim_risk">riesgo inexitente</string>
 </resources>
