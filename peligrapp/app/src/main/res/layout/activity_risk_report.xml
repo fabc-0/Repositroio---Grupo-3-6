@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/riskReportImage"
-        android:layout_width="300dp"
-        android:layout_height="168.75dp"
+        android:layout_width="350dp"
+        android:layout_height="196.88dp"
         android:layout_marginTop="30dp"
         android:contentDescription="Risk image provided by user"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,6 +23,8 @@
         android:layout_height="200dp"
         android:layout_marginTop="30dp"
         android:text="reportDescription"
+        android:textSize="14sp"
+        android:textColor="@color/primaryTextColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +39,8 @@
         android:autoSizeMaxTextSize="14sp"
         android:autoSizeMinTextSize="6sp"
         android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/secondaryDarkColor"
+        android:textColor="@color/secondaryTextColor"
         app:layout_constraintStart_toStartOf="@+id/riskReportDescription"
         app:layout_constraintTop_toBottomOf="@+id/riskReportDescription" />
 
@@ -48,7 +52,8 @@
         android:autoSizeMaxTextSize="14sp"
         android:autoSizeMinTextSize="6sp"
         android:autoSizeTextType="uniform"
-        android:backgroundTint="#FF5722"
+        android:backgroundTint="@color/primaryDarkColor"
+        android:textColor="@color/secondaryTextColor"
         android:text="Rechazar"
         app:layout_constraintEnd_toEndOf="@+id/riskReportDescription"
         app:layout_constraintTop_toBottomOf="@+id/riskReportDescription" />

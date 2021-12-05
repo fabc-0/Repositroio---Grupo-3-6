@@ -159,7 +159,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         Log.i("PUNTOS: ", location.getLatitude() + " Long: " + location.getLongitude());
                         latitud = location.getLatitude();
                         longitud = location.getLongitude();
-                        miUbicacion=crearPunto(latitud, longitud, 153, "Mi Ubicación (Yo)", true);
+                        miUbicacion=crearPunto(latitud, longitud, 122, "Mi Ubicación (Yo)", true);
                         miUbicacion.setTag("Ubicación Actual");
                         mMap.setOnMarkerDragListener(new GoogleMap.OnMarkerDragListener() {
                             @Override
@@ -172,7 +172,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 if (marker.equals(miUbicacion)) {
                                     latriesgo = miUbicacion.getPosition().latitude;
                                     longriesgo = miUbicacion.getPosition().longitude;
-                                    miUbicacionRiesgo = crearPunto(latriesgo, longriesgo, 31, "Ubicación Riesgo", true);
+                                    miUbicacionRiesgo = crearPunto(latriesgo, longriesgo, 54, "Ubicación Riesgo", true);
                                     miUbicacionRiesgo.setTag(UUID.randomUUID().toString());
                                     Log.i("RIESGO_ID_CREACION",miUbicacionRiesgo.getId());
                                     LatLng point = new LatLng(latitud, longitud);
@@ -262,8 +262,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Log.i("RIESGODB crearRiesgo", String.valueOf(riesgolList.size()));
         for (int i = 0; i < riesgolList.size(); i++)
         {
-            //String title = riesgolList.get(i).descripcion;
-            Marker dibujar = crearPunto(Double.valueOf(riesgolList.get(i).latitud), Double.valueOf(riesgolList.get(i).longitud),275,riesgolList.get(i).descripcion,false);
+            Marker dibujar = crearPunto(Double.valueOf(riesgolList.get(i).latitud), Double.valueOf(riesgolList.get(i).longitud),14,"",false);
             dibujar.setTag(riesgolList.get(i).idriesgo);
             Log.i("RIESGODB ",riesgolList.get(i).idriesgo+" "+riesgolList.get(i).latitud+" "+riesgolList.get(i).longitud);
         }

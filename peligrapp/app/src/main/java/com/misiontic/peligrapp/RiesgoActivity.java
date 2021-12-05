@@ -106,7 +106,7 @@ public class RiesgoActivity extends AppCompatActivity implements Serializable {
 
     public void elegirImagen(){
         Intent intent = new Intent();
-        intent.setType("image/jpeg");
+        intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(intent,1);
     }
@@ -166,28 +166,29 @@ public class RiesgoActivity extends AppCompatActivity implements Serializable {
 
             }
         else {
+            Toast.makeText(RiesgoActivity.this, "Por favor seleccione una imagen", Toast.LENGTH_SHORT).show();
             Log.i("UPLOAD","ImageUri might be null ");
         }
     }
 
-    public void guardarReporte(String descr, String lat, String longi, String iduser){
-        //idRiesgo = idRiesgo +1;
-        String estado = "Activo";
-        String imagen=" ";
-        RiesgoModel riesgo = new RiesgoModel(idRiesgo, descr,  lat, longi, iduser, estado, imagen);
-        mDatabase.child("riesgos").child(idRiesgo).setValue(riesgo).addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void unused) {
-                Toast.makeText(RiesgoActivity.this, "Riesgo añadido", Toast.LENGTH_SHORT).show();
-                Log.i("UPLOAD_RISK_SUCC","Riesgo añadido "+idRiesgo);
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Log.i("UPLOAD_RISK_FAIL","Error");
-                Toast.makeText(RiesgoActivity.this, "Ocurrió un error, por favor intente de nuevo", Toast.LENGTH_SHORT).show();
-            }
-        });
+    public void guardarReporte(String descr, String lat, String longi, String iduser) {
+        Log.i("NO_INFO", "Esto es null? "+ txtDescripcion.getText().toString());
+            String estado = "Activo";
+            String imagen = " ";
+            RiesgoModel riesgo = new RiesgoModel(idRiesgo, descr, lat, longi, iduser, estado, imagen);
+            mDatabase.child("riesgos").child(idRiesgo).setValue(riesgo).addOnSuccessListener(new OnSuccessListener<Void>() {
+                @Override
+                public void onSuccess(Void unused) {
+                    Toast.makeText(RiesgoActivity.this, "Riesgo añadido", Toast.LENGTH_SHORT).show();
+                    Log.i("UPLOAD_RISK_SUCC", "Riesgo añadido " + idRiesgo);
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    Log.i("UPLOAD_RISK_FAIL", "Error");
+                    Toast.makeText(RiesgoActivity.this, "Ocurrió un error, por favor intente de nuevo", Toast.LENGTH_SHORT).show();
+                }
+            });
 
+        }
     }
-}

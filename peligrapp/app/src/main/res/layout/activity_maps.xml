@@ -21,29 +21,45 @@
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="10dp"
         android:clickable="true"
         android:src="@drawable/ic_danger"
         map:backgroundTint="@android:color/transparent"
         map:fabSize="auto"
-        map:tint = "@null"
-        map:layout_constraintBottom_toBottomOf="parent"
-        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintBottom_toTopOf="@+id/recenterButton"
+        map:layout_constraintEnd_toEndOf="@+id/recenterButton"
         map:maxImageSize="60dp"
-        map:rippleColor="@android:color/transparent" />
+        map:rippleColor="@android:color/transparent"
+        map:tint="@null" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/recenterButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="8dp"
         android:clickable="true"
         android:contentDescription="Recenter"
         android:src="@drawable/ic_baseline_center_focus_strong_24"
         map:fabSize="auto"
-        map:layout_constraintBottom_toTopOf="@+id/btnAdd"
-        map:layout_constraintEnd_toEndOf="@+id/btnAdd"
+        map:layout_constraintBottom_toTopOf="@+id/accountButton"
+        map:layout_constraintEnd_toEndOf="@+id/accountButton"
         map:maxImageSize="60dp"
-        map:tint="@color/teal_700" />
+        map:tint="@color/secondaryDarkColor"
+        android:backgroundTint="@color/trasparentColor"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/accountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="35dp"
+        android:clickable="true"
+        android:contentDescription="Cuenta"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:backgroundTint="@color/trasparentColor"
+        map:tint="@color/primaryDarkColor"
+        map:fabSize="auto"
+        map:layout_constraintBottom_toBottomOf="@+id/map"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:maxImageSize="60dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

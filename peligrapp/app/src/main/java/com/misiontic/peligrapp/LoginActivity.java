@@ -79,6 +79,8 @@ public class LoginActivity extends AppCompatActivity {
                 if(!email.equals("") && !password.equals(""))
                 {
                     signin(email,password);
+                    inputPassword.getText().clear();
+                    inputEmail.getText().clear();
                 }
                 else
                 {
