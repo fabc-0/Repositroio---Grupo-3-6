@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "470150186047",
+    "firebase_url": "https://peligro-333620-default-rtdb.firebaseio.com",
+    "project_id": "peligro-333620",
+    "storage_bucket": "peligro-333620.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470150186047:android:832dc7c373d667ff30648a",
+        "android_client_info": {
+          "package_name": "com.misiontic.peligrapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470150186047-keq48s9ru85t0hh0eo88os2u37f2c2pq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDxHgpzB68sMUrwfmSutBG2eaEDL2aya4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470150186047-keq48s9ru85t0hh0eo88os2u37f2c2pq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiesgoActivity">
+
+    <ImageView
+        android:id="@+id/imageViewCircle"
+        android:layout_width="300dp"
+        android:layout_height="168.75dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/ic_palceholder_pokemon_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="325dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/borde_descripcion"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Descripción del Riesgo"
+        android:inputType="textMultiLine"
+        android:paddingLeft="8dp"
+        android:paddingTop="30dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCircle" />
+
+    <Button
+        android:id="@+id/btnReportar"
+        android:layout_width="319dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#009688"
+        android:text="REPORTAR RIESGO"
+        android:layout_margin="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="319dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#DD1919"
+        android:text="CANCELAR"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReportar" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

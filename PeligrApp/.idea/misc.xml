@@ -3,38 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.33" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/drawable/ic_add_24.xml" value="0.2625" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/drawable/ic_android_placeholder_108.xml" value="0.13645833333333332" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/drawable/ic_baseline_face_24.xml" value="0.13645833333333332" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/drawable/ic_center_button_strong_24.xml" value="0.2625" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/drawable/ic_face_24.xml" value="0.13645833333333332" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.13645833333333332" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/drawable/side_nav_bar.xml" value="0.13645833333333332" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/layout/app_bar_main.xml" value="0.2421875" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/layout/content_main.xml" value="0.2421875" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/layout/fragment_gallery.xml" value="0.11614583333333334" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/layout/fragment_home.xml" value="0.11614583333333334" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/layout/fragment_slideshow.xml" value="0.2421875" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/layout/nav_header_main.xml" value="0.33" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.67" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/menu/main.xml" value="0.33" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.13645833333333332" />
-        <entry key="..\:/Users/57316/Documents/GitHub/PeligrApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.13645833333333332" />
-        <entry key="..\:/Users/57316/Documents/GitHub/Repositroio---Grupo-3-6/PeligrApp/app/src/main/res/drawable/border.xml" value="0.2574055158324821" />
-        <entry key="..\:/Users/57316/Documents/GitHub/Repositroio---Grupo-3-6/PeligrApp/app/src/main/res/drawable/ic_danger_photo_placeholder.xml" value="0.22" />
-        <entry key="..\:/Users/57316/Documents/GitHub/Repositroio---Grupo-3-6/PeligrApp/app/src/main/res/drawable/pop_bg.xml" value="0.2625" />
-        <entry key="..\:/Users/57316/Documents/GitHub/Repositroio---Grupo-3-6/PeligrApp/app/src/main/res/layout/activity_login.xml" value="0.2421875" />
-        <entry key="..\:/Users/57316/Documents/GitHub/Repositroio---Grupo-3-6/PeligrApp/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
-        <entry key="..\:/Users/57316/Documents/GitHub/Repositroio---Grupo-3-6/PeligrApp/app/src/main/res/layout/activity_pop_report.xml" value="0.25" />
-        <entry key="..\:/Users/57316/Documents/GitHub/Repositroio---Grupo-3-6/PeligrApp/app/src/main/res/layout/app_bar_main.xml" value="0.1875" />
-        <entry key="..\:/Users/57316/Documents/GitHub/Repositroio---Grupo-3-6/PeligrApp/app/src/main/res/layout/content_main.xml" value="0.1875" />
-        <entry key="..\:/Users/57316/Documents/GitHub/Repositroio---Grupo-3-6/PeligrApp/app/src/main/res/layout/fragment_home.xml" value="0.2421875" />
-        <entry key="..\:/Users/57316/Documents/GitHub/Repositroio---Grupo-3-6/PeligrApp/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
-        <entry key="..\:/Users/57316/Documents/GitHub/Repositroio---Grupo-3-6/PeligrApp/app/src/main/res/layout/fragment_settings.xml" value="0.2421875" />
-        <entry key="..\:/Users/57316/Documents/GitHub/Repositroio---Grupo-3-6/PeligrApp/app/src/main/res/layout/nav_header_main.xml" value="0.1875" />
+        <entry key="..\:/Users/57316/Documents/GitHub/Pruebas/peligrapp/app/src/main/res/layout/activity_maps.xml" value="0.25" />
+        <entry key="..\:/Users/57316/Documents/GitHub/Pruebas/peligrapp/app/src/main/res/layout/activity_riesgo.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/57316/Documents/GitHub/Pruebas/peligrapp/app/src/main/res/layout/activity_risk_report.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ds010109/AndroidStudioProjects/peligrapp/app/src/main/res/drawable/borde_descripcion.xml" value="0.2890625" />
+        <entry key="..\:/Users/ds010109/AndroidStudioProjects/peligrapp/app/src/main/res/drawable/ic_danger.xml" value="0.15885416666666666" />
+        <entry key="..\:/Users/ds010109/AndroidStudioProjects/peligrapp/app/src/main/res/drawable/ic_forgot_password.xml" value="0.15885416666666666" />
+        <entry key="..\:/Users/ds010109/AndroidStudioProjects/peligrapp/app/src/main/res/drawable/ic_palceholder_pokemon_24.xml" value="0.2890625" />
+        <entry key="..\:/Users/ds010109/AndroidStudioProjects/peligrapp/app/src/main/res/layout/activity_login.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/ds010109/AndroidStudioProjects/peligrapp/app/src/main/res/layout/activity_maps.xml" value="0.25" />
+        <entry key="..\:/Users/ds010109/AndroidStudioProjects/peligrapp/app/src/main/res/layout/activity_password.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/ds010109/AndroidStudioProjects/peligrapp/app/src/main/res/layout/activity_riesgo.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/ds010109/AndroidStudioProjects/peligrapp/app/src/main/res/layout/activity_sign_up.xml" value="0.14270833333333333" />
       </map>
     </option>
   </component>

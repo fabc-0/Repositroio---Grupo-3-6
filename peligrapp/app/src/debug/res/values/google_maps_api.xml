@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=A2:14:F9:DD:41:24:6B:B1:49:66:C3:0B:E9:67:CA:78:4A:E3:28:05%3Bcom.misiontic.peligrapp
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.misiontic.peligrapp
+
+    SHA-1 certificate fingerprint:
+    A2:14:F9:DD:41:24:6B:B1:49:66:C3:0B:E9:67:CA:78:4A:E3:28:05
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBfSjpUjBhGgcC2ppClQqKzgEmvNRHORXA</string>
+</resources>
