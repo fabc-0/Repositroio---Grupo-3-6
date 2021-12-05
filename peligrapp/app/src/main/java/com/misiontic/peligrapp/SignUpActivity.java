@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -19,6 +20,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -41,6 +43,7 @@ public class SignUpActivity extends AppCompatActivity {
     DatabaseReference reference;
     StorageReference storageReference;
     FirebaseStorage firebaseStorage;
+    FirebaseUser firebaseUser;
     Uri imageUri;
 
     @Override
@@ -74,11 +77,15 @@ public class SignUpActivity extends AppCompatActivity {
                 String email = editTextEmailSignUp.getText().toString();
                 String password = editTextPasswordSignUp.getText().toString();
                 String username = editTextUsername.getText().toString();
+                Log.i("SIGNUP",email+" "+password+" "+username);
 
                 if (!email.equals("") && !password.equals("") && !username.equals(""))
                 {
-                    Log.i("SIGNUP",email+password+username);
+                    Log.i("SIGNUP",email+" "+password+" "+username);
                     signUp(username,email,password);
+                    editTextEmailSignUp.getText().clear();
+                    editTextUsername.getText().clear();;
+                    editTextPasswordSignUp.getText().clear();
                 }
 
             }
@@ -109,6 +116,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     public void signUp(String userName, String email, String password){
+        Log.i("SIGNUP",email+" "+password+" "+userName);
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -152,9 +160,14 @@ public class SignUpActivity extends AppCompatActivity {
                         reference.child("Users").child(auth.getUid()).child("image").setValue("null");
                     }
 
-                    Intent intent = new Intent(SignUpActivity.this, MapsActivity.class);
+                    firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+                    String email = firebaseUser.getEmail();
+                    Intent intent = new Intent(SignUpActivity.this,MapsActivity.class);
+                    final Bundle bolsa = new Bundle();
+                    bolsa.putString("user",email);
+                    intent.putExtras(bolsa);
+                    Log.i("USER_IN_BUNDLE",bolsa.getString("user"));
                     startActivity(intent);
-                    finish();
                 }
                 else{
 

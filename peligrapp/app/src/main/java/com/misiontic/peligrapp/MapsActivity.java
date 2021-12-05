@@ -314,6 +314,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onBackPressed(){
         auth.getInstance().signOut();
         finish();
+        Intent intent = new Intent(MapsActivity.this,LoginActivity.class);
+        startActivity(intent);
     }
 
 }
